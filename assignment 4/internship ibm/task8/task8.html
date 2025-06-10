@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Frequently Asked Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .faq {
+            margin-bottom: 20px;
+        }
+        .faq h2 {
+            font-size: 18px;
+            color: #007BFF;
+            cursor: pointer;
+        }
+        .faq p {
+            display: none;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions (FAQ)</h1>
+        
+        <div class="faq">
+            <label for="q1">Question:</label>
+            <h2 id="q1" onclick="toggleAnswer('a1')">What is this website about?</h2>
+            <p id="a1">This website provides answers to frequently asked questions on various topics.</p>
+        </div>
+        
+        <div class="faq">
+            <label for="q2">Question:</label>
+            <h2 id="q2" onclick="toggleAnswer('a2')">How can I contact support?</h2>
+            <p id="a2">You can contact support by emailing support@example.com.</p>
+        </div>
+        
+        <div class="faq">
+            <label for="q3">Question:</label>
+            <h2 id="q3" onclick="toggleAnswer('a3')">Is this service free?</h2>
+            <p id="a3">Yes, this service is completely free to use.</p>
+        </div>
+    </div>
+</body>
+</html>

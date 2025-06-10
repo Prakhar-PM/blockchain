@@ -1,0 +1,127 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>You're Invited!</title>     
+    <style>         
+        * {             
+            margin: 0;             
+            padding: 0;             
+            box-sizing: border-box;         
+        }          
+        body {             
+            font-family: 'Playfair Display', serif;             
+            line-height: 1.6;             
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);             
+            min-height: 100vh;             
+            padding: 20px;             
+            display: flex;             
+            justify-content: center;             
+            align-items: center;         
+        }          
+        .invitation-card {             
+            background: white;             
+            max-width: 600px;             
+            padding: 40px;             
+            border-radius: 15px;             
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);             
+            text-align: center;         
+        }          
+        .event-title {             
+            font-size: 2.5em;             
+            color: #2c3e50;             
+            margin-bottom: 20px;         
+        }          
+        .event-type {             
+            color: #7f8c8d;             
+            font-size: 1.2em;             
+            margin-bottom: 30px;         
+        }          
+        .details {             
+            margin: 30px 0;         
+        }          
+        .detail-item {             
+            margin: 15px 0;         
+        }          
+        .detail-label {             
+            font-weight: bold;             
+            color: #34495e;         
+        }          
+        .rsvp-form {             
+            margin-top: 40px;             
+            padding: 20px;             
+            background: #f8f9fa;             
+            border-radius: 10px;         
+        }          
+        input, select {             
+            width: 100%;             
+            padding: 10px;             
+            margin: 10px 0;             
+            border: 1px solid #ddd;             
+            border-radius: 5px;         
+        }          
+        button {             
+            background: #2c3e50;             
+            color: white;             
+            border: none;             
+            padding: 12px 30px;             
+            border-radius: 25px;             
+            cursor: pointer;             
+            font-size: 1.1em;             
+            margin-top: 20px;             
+            transition: background 0.3s ease;         
+        }          
+        button:hover {             
+            background: #34495e;         
+        }          
+        .decorative-line {             
+            height: 2px;             
+            background: linear-gradient(90deg, transparent, #2c3e50, transparent);             
+            margin: 30px 0;         
+        }          
+        @media (max-width: 480px) {             
+            .invitation-card {                 
+                padding: 20px;             
+            }              
+            .event-title {                 
+                font-size: 2em;             
+            }         
+        }     
+    </style> 
+</head> 
+<body>     
+    <div class="invitation-card">         
+        <h1 class="event-title">Prakhar Mishra's Birthday Party</h1>         
+        <p class="event-type">You are warmly invited to celebrate!</p>                  
+        <div class="decorative-line"></div>                  
+        <div class="details">             
+            <div class="detail-item">                 
+                <span class="detail-label">Date:</span>                 
+                <p>Monday, August 04th, 2025</p>             
+            </div>             
+            <div class="detail-item">                 
+                <span class="detail-label">Time:</span>                 
+                <p>6:00 PM - 11:00 PM</p>             
+            </div>             
+            <div class="detail-item">                 
+                <span class="detail-label">Location:</span>                 
+                <p>crescent</p>                 
+                <p>sehore , bhopal</p>             
+            </div>         
+        </div>          
+        <div class="decorative-line"></div>          
+        <form class="rsvp-form">             
+            <h2>RSVP</h2>             
+            <input type="text" placeholder="Your Name" required>             
+            <input type="email" placeholder="Your Email" required>             
+            <select required>                 
+                <option value="">Will you attend?</option>                 
+                <option value="yes">Excited to Join!</option>                 
+                <option value="no">Regretfully Decline</option>             
+            </select>             
+            <button type="submit">Submit</button>
+        </form>     
+    </div> 
+</body> 
+</html>

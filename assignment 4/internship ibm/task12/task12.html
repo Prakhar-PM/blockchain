@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Online Quiz</h1>
+        <form>
+            <div class="question">
+                <p>1. What is the capital of India?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1"> Delhi</label>
+                    <label><input type="radio" name="q1"> Mumbai</label>
+                    <label><input type="radio" name="q1"> Chennai</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>2. What is 2 + 2?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2"> 3</label>
+                    <label><input type="radio" name="q2"> 4</label>
+                    <label><input type="radio" name="q2"> 5</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>3. What is the national animal of India?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3"> Tiger</label>
+                    <label><input type="radio" name="q3"> Elephant</label>
+                    <label><input type="radio" name="q3"> Lion</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>4. How many states are there in India?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4"> 28</label>
+                    <label><input type="radio" name="q4"> 29</label>
+                    <label><input type="radio" name="q4"> 30</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>5. Who wrote the Indian National Anthem?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5"> Rabindranath Tagore</label>
+                    <label><input type="radio" name="q5"> Mahatma Gandhi</label>
+                    <label><input type="radio" name="q5"> Bankim Chandra Chatterjee</label>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

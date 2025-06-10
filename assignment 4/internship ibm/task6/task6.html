@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: #e0f7fa; /* Changed background color */
+        }
+
+        header {
+            background: #00796b; /* Changed header background color */
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .blog-title {
+            font-size: 2.5rem;
+            color: #ffffff; /* Changed title color */
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: #ffffff; /* Changed navigation link color */
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #b2dfdb; /* Changed hover color */
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .blog-post {
+            background: #ffffff; /* Changed blog post background color */
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .post-title {
+            color: #00796b; /* Changed post title color */
+            margin-bottom: 0.5rem;
+        }
+
+        .post-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .post-content {
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            color: #00796b; /* Changed read more link color */
+            text-decoration: none;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #00796b; /* Changed footer background color */
+            color: #ffffff; /* Changed footer text color */
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .blog-title {
+                font-size: 2rem;
+            }
+
+            .blog-post {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="blog-title">Prakhar's Personal Blog</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#archive">Archive</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="blog-post">
+            <h2 class="post-title">Getting Started with Web Development</h2>
+            <div class="post-meta">Posted on February 21, 2025 by Prakhar</div>
+            <img src="/task6/webd.png" alt="Web Development">
+            <div class="post-content">
+                <p>Web development is an exciting field that allows you to build amazing applications and websites...</p>
+            </div>
+            
+        </article>
+
+        <article class="blog-post">
+            <h2 class="post-title">Exploring the Beauty of Nature</h2>
+            <div class="post-meta">Posted on February 18, 2025 by Prakhar</div>
+            <img src="/task6/nature.png" alt="Nature View">
+            <div class="post-content">
+                <p>Nature is a wonderful escape from daily life. It brings peace, beauty, and adventure...</p>
+            </div>
+           
+        </article>
+
+        <article class="blog-post">
+            <h2 class="post-title">A Day in My Life - Vlog</h2>
+            <div class="post-meta">Posted on February 15, 2025 by Prakhar</div>
+            <img src="/task6/dayinmylife.png" alt="Daily Life">
+            <div class="post-content">
+                <p>Follow me through a typical day in my life as I explore new places, work on projects, and have fun...</p>
+            </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Personal Blog | Designed by Prakhar</p>
+    </footer>
+</body>
+</html>

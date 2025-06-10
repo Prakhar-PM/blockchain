@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #1a1a1a;
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: linear-gradient(45deg, #1a1a1a, #333);
+            color: white;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background: #ff4d4d;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+           
+        }
+
+        .cta-button:hover {
+            background: #ff3333;
+        }
+
+        .features {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            text-align: center;
+            background: #f5f5f5;
+            border-radius: 10px;
+        }
+
+        .product-showcase {
+            background: #f9f9f9;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin: 2rem 0;
+        }
+
+        .specs {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contact {
+            padding: 4rem 2rem;
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>Prakhar's Headset</h2>
+            <div class="nav-links">
+                <a href="https://www.example.com/features" target="_blank">Features</a>
+                <a href="https://www.example.com/specs" target="_blank">Specs</a>
+                <a href="https://www.example.com/contact" target="_blank">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Experience Pure Sound</h1>
+        <p>Premium wireless headphones with exceptional sound quality</p>
+        <a href="#buy" class="cta-button">Buy Now - ₹78989899</a>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Why Choose Prakhar'sHeadset?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>40H Battery Life</h3>
+                <p>Long-lasting battery for uninterrupted listening experience</p>
+            </div>
+            <div class="feature-card">
+                <h3>Active Noise Cancellation</h3>
+                <p>Block out unwanted noise for immersive sound</p>
+            </div>
+            <div class="feature-card">
+                <h3>Premium Sound Quality</h3>
+                <p>High-fidelity audio with deep bass and clear highs</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-showcase">
+        <img src="/task5/image.png" alt="prakhar'sHeadset Headphones" class="product-image">
+    </section>
+
+    <section class="specs" id="specs">
+        <h2>Technical Specifications</h2>
+        <div class="spec-item">
+            <span>Driver Size</span>
+            <span>40mm</span>
+        </div>
+        <div class="spec-item">
+            <span>Frequency Response</span>
+            <span>20Hz - 20kHz</span>
+        </div>
+        <div class="spec-item">
+            <span>Bluetooth Version</span>
+            <span>5.0</span>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Prakhar'sHeadset. All rights reserved.</p>
+    </footer>
+</body>
+</html>

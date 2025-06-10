@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f0f0; /* Changed background color */
+        }
+
+        header {
+            background-color: #ff6b6b; /* Changed header background color */
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem; /* Increased logo font size */
+            color: #fff; /* Changed logo color */
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #fff; /* Changed navigation link color */
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #333; /* Changed hover color */
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .recipe-card {
+            background: #fff; /* Changed recipe card background color */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Increased box shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-10px); /* Increased hover transform */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Increased hover box shadow */
+        }
+
+        .recipe-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .recipe-content {
+            padding: 1.5rem;
+        }
+
+        .recipe-title {
+            font-size: 1.6rem; /* Increased recipe title font size */
+            margin-bottom: 0.5rem;
+            color: #ff6b6b; /* Changed recipe title color */
+        }
+
+        .recipe-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .recipe-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background: #ff6b6b; /* Changed tag background color */
+            padding: 0.2rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: #fff; /* Changed tag text color */
+        }
+
+        .featured-recipe {
+            background: #fff; /* Changed featured recipe background color */
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Increased box shadow */
+        }
+
+        .featured-content {
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav a {
+                margin: 0 1rem;
+            }
+
+            .recipe-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo">Delicious</a>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#recipes">Recipes</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="featured-recipe">
+            <img src="/task7/pizza.png" alt="Homemade Pizza" class="recipe-image">
+            <div class="featured-content">
+                <h1 class="recipe-title">Homemade Pizza with Fresh Basil</h1>
+                <div class="recipe-meta">
+                    <span>Prep: 30 mins</span>
+                    <span>Cook: 20 mins</span>
+                    <span>Serves: 4</span>
+                    <span><strong>Posted by Prakhar </strong></span>
+                </div>
+            </div>
+        </div>
+
+        <h2>More Recipes You'll Love</h2>
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <img src="/task7/cake.png" alt="Chocolate Cake" class="recipe-image">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Classic Chocolate Cake</h3>
+                    <div class="recipe-meta">
+                        <span>45 mins</span>
+                        <span>Dessert</span>
+                        <span><strong>Posted by Prakhar </strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <img src="/task7/pasta.png" alt="Pasta" class="recipe-image">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Creamy Garlic Pasta</h3>
+                    <div class="recipe-meta">
+                        <span>20 mins</span>
+                        <span>Main Course</span>
+                        <span><strong>Posted by Prakhar </strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <img src="/task7/salad.png" alt="Salad" class="recipe-image">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Mediterranean Salad</h3>
+                    <div class="recipe-meta">
+                        <span>15 mins</span>
+                        <span>Salad</span>
+                        <span><strong>Posted by Prakhar Mishra</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

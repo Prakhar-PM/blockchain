@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Prakhar's Art Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="card" onclick="openModal('Sunset Serenity', 'A beautiful painting capturing the essence of a peaceful sunset.', 'https://via.placeholder.com/300')">
+            <img src="/task15/sun.png" alt="Sunset Serenity">
+            <div class="card-content">
+                <h3>Sunset Serenity</h3>
+            </div>
+        </div>
+        <div class="card" onclick="openModal('Sunset Serenity', 'A beautiful painting capturing the essence of a peaceful sunset.', 'https://via.placeholder.com/300')">
+            <img src="/task15/moon.png" alt="Sunset Serenity">
+            <div class="card-content">
+                <h3>Moon Lighting </h3>
+            </div>
+        </div>
+        <div class="card" onclick="openModal('Sunset Serenity', 'A beautiful painting capturing the essence of a peaceful sunset.', 'https://via.placeholder.com/300')">
+            <img src="/task15/forest.png" alt="Sunset Serenity">
+            <div class="card-content">
+                <h3>Rain Forest</h3>
+            </div>
+        </div>
+        <div class="card" onclick="openModal('Sunset Serenity', 'A beautiful painting capturing the essence of a peaceful sunset.', 'https://via.placeholder.com/300')">
+            <img src="/task15/grass.png" alt="Sunset Serenity">
+            <div class="card-content">
+                <h3>Grassland</h3>
+            </div>
+        </div>
+        <div class="card" onclick="openModal('Sunset Serenity', 'A beautiful painting capturing the essence of a peaceful sunset.', 'https://via.placeholder.com/300')">
+            <img src="/task15/fog.png" alt="Sunset Serenity">
+            <div class="card-content">
+                <h3>Blurry Fog</h3>
+            </div>
+        </div>
+        <div class="card" onclick="openModal('Sunset Serenity', 'A beautiful painting capturing the essence of a peaceful sunset.', 'https://via.placeholder.com/300')">
+            <img src="/task15/lib.png" alt="Sunset Serenity">
+            <div class="card-content">
+                <h3>Library Aesthetics</h3>
+            </div>
+        </div>
+        <div class="card" onclick="openModal('Abstract Dreams', 'An abstract digital artwork full of vibrant colors and energy.', 'https://via.placeholder.com/300')">
+            <img src="/task15/dreams.png" alt="Abstract Dreams">
+            <div class="card-content">
+                <h3>Abstract Dreams</h3>
+            </div>
+        </div>
+        <div class="card" onclick="openModal('Sculpted Elegance', 'A modern sculpture showcasing intricate details and fluid design.', 'https://via.placeholder.com/300')">
+            <img src="/task15/elegance.png" alt="Sculpted Elegance">
+            <div class="card-content">
+                <h3>Sculpted Elegance</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <img id="modal-image" src="" alt="" style="width: 100%; border-radius: 10px;">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    
+   
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Reviews</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            line-height: 1.6;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .book-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .book-cover {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .book-info {
+            padding: 1.5rem;
+        }
+
+        .book-title {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .book-author {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .rating {
+            margin-bottom: 1rem;
+        }
+
+        .stars {
+            color: #f1c40f;
+            font-size: 1.2rem;
+        }
+
+        .review-text {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .book-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+        }
+
+        .tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background: #eee;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .filter-section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 20px;
+            background: #eee;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-button:hover {
+            background: #2c3e50;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .book-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .book-cover {
+            width: 100%;
+            height: auto;
+            max-height: 400px; /* Adjust this if needed */
+            object-fit: cover;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>My Book Reviews</h1>
+            <p>Exploring literature one page at a time</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="filter-section">
+            <h2>Filter Reviews</h2>
+        </div>
+
+        <div class="book-grid">
+            <div class="book-card">
+                <img src="/task9/book1.png" alt="Book Cover" class="book-cover">
+                <div class="book-info">
+                    <h2 class="book-title">The Midnight Library</h2>
+                    <p class="book-author">by Matt Haig</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>(5.0)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Fiction</span>
+                        <span class="tag">Fantasy</span>
+                        <span class="tag">Philosophy</span>
+                    </div>
+                    <p class="review-text">
+                        A beautiful and thought-provoking novel about life's infinite possibilities. The story follows Nora Seed as she finds herself in a library between life and death, with endless books representing different life choices she could have made.
+                    </p>
+                    <div class="book-meta">
+                        <span>Read on: Jan 15, 2025</span>
+                        <span>Pages: 304</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <img src="/task9/book2.png" alt="Book Cover" class="book-cover">
+                <div class="book-info">
+                    <h2 class="book-title">Atomic Habits</h2>
+                    <p class="book-author">by James Clear</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span>(4.0)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Non-Fiction</span>
+                        <span class="tag">Self-Help</span>
+                        <span class="tag">Psychology</span>
+                    </div>
+                    <p class="review-text">
+                        An excellent guide to building good habits and breaking bad ones. Clear presents practical strategies for behavior change, backed by scientific research and real-world examples.
+                    </p>
+                    <div class="book-meta">
+                        <span>Read on: Feb 1, 2025</span>
+                        <span>Pages: 320</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <img src="/task9/book3.png" alt="Book Cover" class="book-cover">
+                <div class="book-info">
+                    <h2 class="book-title">Project Hail Mary</h2>
+                    <p class="book-author">by Andy Weir</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>(5.0)</span>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Science Fiction</span>
+                        <span class="tag">Adventure</span>
+                        <span class="tag">Space</span>
+                    </div>
+                    <p class="review-text">
+                        A thrilling sci-fi adventure that combines detailed scientific accuracy with heart-warming human connection. The story of an astronaut who wakes up alone on a spacecraft with no memory is both engaging and thought-provoking.
+                    </p>
+                    <div class="book-meta">
+                        <span>Read on: Feb 20, 2025</span>
+                        <span>Pages: 496</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

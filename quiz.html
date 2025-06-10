@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .title {
+            color: #2563eb;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .introduction {
+            font-size: 1.1rem;
+            text-align: justify;
+            margin-bottom: 2rem;
+        }
+
+        .hobby-container {
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           gap: 30px;
+        }
+          
+        .hobby-box {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .hobby {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .hobby-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Welcome to My Portfolio</h1>
+
+    <div class="introduction">
+        Hello! My Name is Prakhar, currently pursuing btech in vit bhopal university and writing this for my quiz 
+    </div>
+
+    <div class="hobby-container">
+        <div class="hobby-box">
+            <div class="hobby">Play cricket</div>
+            <p>I can spend countless hours playing cricket since childhood passion
+                 but right now preparing for placement have stopped it </p>
+        </div>
+
+        <div class="hobby-box">
+            <div class="hobby">Eating Good food</div>
+            <p> I enjoy eating delicious food and exploring different cuisins </p>
+        </div>
+    </div>
+</body>
+</html>
